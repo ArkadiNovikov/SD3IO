@@ -154,7 +154,7 @@ namespace SD3IO
     {
         static public bool Read(String pathString, out Root result)
         {
-            if(!File.Exists(pathString))
+            if (!File.Exists(pathString))
             {
                 result = new Root();
                 return false;
@@ -164,7 +164,7 @@ namespace SD3IO
             {
                 using (var br = new BinaryReader(file))
                 {
-                    if(file.Length != 8192)
+                    if (file.Length != 8192)
                     {
                         result = new Root();
                         return false;
@@ -185,9 +185,22 @@ namespace SD3IO
             return true;
         }
 
-        public static void Write(String path)
+        public static void Write(String path, Root data)
         {
+            byte[] dataByteArray = new byte[Marshal.SizeOf(data)];
 
+            GCHandle? handle = null;
+            try
+            {
+                handle = GCHandle.Alloc(dataByteArray, GCHandleType.Pinned);
+                Marshal.StructureToPtr<Root>(data, handle.Value.AddrOfPinnedObject(), false);
+            }
+            finally
+            {
+                handle?.Free();
+            }
+
+            File.WriteAllBytes(path, dataByteArray);
         }
     }
 }
