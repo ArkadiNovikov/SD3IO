@@ -145,8 +145,7 @@ namespace SD3IO
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
     public struct Root
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        public SaveSlot[] slots;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)] public SaveSlot[] slots;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2048)] public byte[] unknown;
     }
 
@@ -160,27 +159,21 @@ namespace SD3IO
                 return false;
             }
 
-            using (var file = File.OpenRead(pathString))
+            ReadOnlySpan<byte> binaryResouce = File.ReadAllBytes(pathString);
+            if (binaryResouce.Length != 8192)
             {
-                using (var br = new BinaryReader(file))
-                {
-                    if (file.Length != 8192)
-                    {
-                        result = new Root();
-                        return false;
-                    }
-                    ReadOnlySpan<byte> binaryResouce = br.ReadBytes((int)file.Length);
+                result = new Root();
+                return false;
+            }
 
-                    var handle = GCHandle.Alloc(binaryResouce.ToArray(), GCHandleType.Pinned);
-                    try
-                    {
-                        result = Marshal.PtrToStructure<Root>(handle.AddrOfPinnedObject());
-                    }
-                    finally
-                    {
-                        handle.Free();
-                    }
-                }
+            var handle = GCHandle.Alloc(binaryResouce.ToArray(), GCHandleType.Pinned);
+            try
+            {
+                result = Marshal.PtrToStructure<Root>(handle.AddrOfPinnedObject());
+            }
+            finally
+            {
+                handle.Free();
             }
             return true;
         }
@@ -188,7 +181,6 @@ namespace SD3IO
         public static void Write(String path, Root data)
         {
             byte[] dataByteArray = new byte[Marshal.SizeOf(data)];
-
             GCHandle? handle = null;
             try
             {
