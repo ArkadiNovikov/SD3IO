@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <NullableContextOptions>enable</NullableContextOptions>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+</Project>
