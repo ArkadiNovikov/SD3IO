@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 
@@ -127,10 +128,10 @@ namespace SD3IO
                     Marshal.StructureToPtr<SaveHeader>(header, headerHandle.Value.AddrOfPinnedObject(), false);
                     Marshal.StructureToPtr<SaveData>(data, dataHandle.Value.AddrOfPinnedObject(), false);
 
-                    var csum = byteHeader.Skip(128).Concat(byteData).Sum(x => x);
-                    var byte2 = BitConverter.GetBytes((ushort)csum);
+                    var checksum = byteHeader.Skip(128).Concat(byteData).Sum(x => x);
+                    var byte2 = BitConverter.GetBytes((ushort)checksum);
                     Debug.Assert(byte2.Length == 2);
-                    return (ushort)csum;
+                    return (ushort)checksum;
                 }
                 finally
                 {
@@ -146,11 +147,47 @@ namespace SD3IO
     {
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
         public SaveSlot[] slots;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2048)] public byte[] unknown1;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2048)] public byte[] unknown;
     }
 
     public class SD3IO
     {
+        static public bool Read(String pathString, out Root result)
+        {
+            if(!File.Exists(pathString))
+            {
+                result = new Root();
+                return false;
+            }
 
+            using (var file = File.OpenRead(pathString))
+            {
+                using (var br = new BinaryReader(file))
+                {
+                    if(file.Length != 8192)
+                    {
+                        result = new Root();
+                        return false;
+                    }
+                    ReadOnlySpan<byte> binaryResouce = br.ReadBytes((int)file.Length);
+
+                    var handle = GCHandle.Alloc(binaryResouce.ToArray(), GCHandleType.Pinned);
+                    try
+                    {
+                        result = Marshal.PtrToStructure<Root>(handle.AddrOfPinnedObject());
+                    }
+                    finally
+                    {
+                        handle.Free();
+                    }
+                }
+            }
+            return true;
+        }
+
+        public static void Write(String path)
+        {
+
+        }
     }
 }
