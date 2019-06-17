@@ -129,8 +129,6 @@ namespace SD3IO
                     Marshal.StructureToPtr<SaveData>(data, dataHandle.Value.AddrOfPinnedObject(), false);
 
                     var checksum = byteHeader.Skip(128).Concat(byteData).Sum(x => x);
-                    var byte2 = BitConverter.GetBytes((ushort)checksum);
-                    Debug.Assert(byte2.Length == 2);
                     return (ushort)checksum;
                 }
                 finally
