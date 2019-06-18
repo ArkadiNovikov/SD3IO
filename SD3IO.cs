@@ -163,8 +163,8 @@ namespace SD3IO
                 return false;
             }
 
-            ReadOnlySpan<byte> binaryResouce = File.ReadAllBytes(pathString);
-            if (binaryResouce.Length != 8192)
+            ReadOnlySpan<byte> saveDataByteArray = File.ReadAllBytes(pathString);
+            if (saveDataByteArray.Length != 8192)
             {
                 result = new Root();
                 return false;
