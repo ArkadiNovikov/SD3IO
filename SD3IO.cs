@@ -133,8 +133,14 @@ namespace SD3IO
                 }
                 finally
                 {
-                    dataHandle?.Free();
-                    headerHandle?.Free();
+                    if (dataHandle?.IsAllocated ?? false)
+                    {
+                        dataHandle?.Free();
+                    }
+                    if (headerHandle?.IsAllocated ?? false)
+                    {
+                        headerHandle?.Free();
+                    }
                 }
             }
         }
@@ -164,14 +170,18 @@ namespace SD3IO
                 return false;
             }
 
-            var handle = GCHandle.Alloc(binaryResouce.ToArray(), GCHandleType.Pinned);
+            GCHandle? handle = null;
             try
             {
-                result = Marshal.PtrToStructure<Root>(handle.AddrOfPinnedObject());
+                handle = GCHandle.Alloc(byteArray.ToArray(), GCHandleType.Pinned);
+                result = Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
             }
             finally
             {
-                handle.Free();
+                if (handle?.IsAllocated ?? false)
+                {
+                    handle?.Free();
+                }
             }
             return true;
         }
@@ -187,7 +197,10 @@ namespace SD3IO
             }
             finally
             {
-                handle?.Free();
+                if (handle?.IsAllocated ?? false)
+                {
+                    handle?.Free();
+                }
             }
 
             File.WriteAllBytes(path, dataByteArray);
