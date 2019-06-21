@@ -153,9 +153,15 @@ namespace SD3IO
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2048)] public byte[] unknown;
     }
 
-    public class SD3IO
+    public interface IIO
     {
-        static public bool Read(String pathString, out Root result)
+        public abstract bool Read(string pathString, out Root result);
+        public abstract void Write(String path, Root data);
+    }
+
+    public class SD3IO : IIO
+    {
+        public bool Read(String pathString, out Root result)
         {
             if (!File.Exists(pathString))
             {
@@ -173,7 +179,7 @@ namespace SD3IO
             GCHandle? handle = null;
             try
             {
-                handle = GCHandle.Alloc(byteArray.ToArray(), GCHandleType.Pinned);
+                handle = GCHandle.Alloc(saveDataByteArray.ToArray(), GCHandleType.Pinned);
                 result = Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
             }
             finally
@@ -186,13 +192,13 @@ namespace SD3IO
             return true;
         }
 
-        public static void Write(String path, Root data)
+        public void Write(String path, Root data)
         {
-            byte[] dataByteArray = new byte[Marshal.SizeOf(data)];
+            byte[] saveDataByteArray = new byte[Marshal.SizeOf(data)];
             GCHandle? handle = null;
             try
             {
-                handle = GCHandle.Alloc(dataByteArray, GCHandleType.Pinned);
+                handle = GCHandle.Alloc(saveDataByteArray, GCHandleType.Pinned);
                 Marshal.StructureToPtr<Root>(data, handle.Value.AddrOfPinnedObject(), false);
             }
             finally
@@ -203,7 +209,7 @@ namespace SD3IO
                 }
             }
 
-            File.WriteAllBytes(path, dataByteArray);
+            File.WriteAllBytes(path, saveDataByteArray);
         }
     }
 }
