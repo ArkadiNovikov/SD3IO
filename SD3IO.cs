@@ -129,14 +129,18 @@ namespace SD3IO
                     Marshal.StructureToPtr<SaveData>(data, dataHandle.Value.AddrOfPinnedObject(), false);
 
                     var checksum = byteHeader.Skip(128).Concat(byteData).Sum(x => x);
-                    var byte2 = BitConverter.GetBytes((ushort)checksum);
-                    Debug.Assert(byte2.Length == 2);
                     return (ushort)checksum;
                 }
                 finally
                 {
-                    dataHandle?.Free();
-                    headerHandle?.Free();
+                    if (dataHandle?.IsAllocated ?? false)
+                    {
+                        dataHandle?.Free();
+                    }
+                    if (headerHandle?.IsAllocated ?? false)
+                    {
+                        headerHandle?.Free();
+                    }
                 }
             }
         }
@@ -149,9 +153,15 @@ namespace SD3IO
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2048)] public byte[] unknown;
     }
 
-    public class SD3IO
+    public interface IIO
     {
-        static public bool Read(String pathString, out Root result)
+        public abstract bool Read(string pathString, out Root result);
+        public abstract void Write(String path, Root data);
+    }
+
+    public class SD3IO : IIO
+    {
+        public bool Read(String pathString, out Root result)
         {
             if (!File.Exists(pathString))
             {
@@ -159,40 +169,47 @@ namespace SD3IO
                 return false;
             }
 
-            ReadOnlySpan<byte> binaryResouce = File.ReadAllBytes(pathString);
-            if (binaryResouce.Length != 8192)
+            ReadOnlySpan<byte> saveDataByteArray = File.ReadAllBytes(pathString);
+            if (saveDataByteArray.Length != 8192)
             {
                 result = new Root();
                 return false;
             }
 
-            var handle = GCHandle.Alloc(binaryResouce.ToArray(), GCHandleType.Pinned);
+            GCHandle? handle = null;
             try
             {
-                result = Marshal.PtrToStructure<Root>(handle.AddrOfPinnedObject());
+                handle = GCHandle.Alloc(saveDataByteArray.ToArray(), GCHandleType.Pinned);
+                result = Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
             }
             finally
             {
-                handle.Free();
+                if (handle?.IsAllocated ?? false)
+                {
+                    handle?.Free();
+                }
             }
             return true;
         }
 
-        public static void Write(String path, Root data)
+        public void Write(String path, Root data)
         {
-            byte[] dataByteArray = new byte[Marshal.SizeOf(data)];
+            byte[] saveDataByteArray = new byte[Marshal.SizeOf(data)];
             GCHandle? handle = null;
             try
             {
-                handle = GCHandle.Alloc(dataByteArray, GCHandleType.Pinned);
+                handle = GCHandle.Alloc(saveDataByteArray, GCHandleType.Pinned);
                 Marshal.StructureToPtr<Root>(data, handle.Value.AddrOfPinnedObject(), false);
             }
             finally
             {
-                handle?.Free();
+                if (handle?.IsAllocated ?? false)
+                {
+                    handle?.Free();
+                }
             }
 
-            File.WriteAllBytes(path, dataByteArray);
+            File.WriteAllBytes(path, saveDataByteArray);
         }
     }
 }
