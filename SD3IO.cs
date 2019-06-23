@@ -11,18 +11,18 @@ namespace SD3IO
     {
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] public sbyte[] existsString;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] public byte[] unknown1;
-        public CharcterHeader character1;
+        public CharacterHeader character1;
         public sbyte music;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)] public byte[] unknown2;
-        public CharcterHeader character2;
+        public CharacterHeader character2;
         public sbyte location;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)] public byte[] unknown3;
-        public CharcterHeader character3;
+        public CharacterHeader character3;
         public int timePlayed;
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
-    public struct CharcterHeader
+    public struct CharacterHeader
     {
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)] public sbyte[] name;
         public sbyte level;
