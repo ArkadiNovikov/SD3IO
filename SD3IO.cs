@@ -155,6 +155,8 @@ namespace SD3IO
 
     public interface IIO
     {
+        public static readonly sbyte[] EXISTSTRING = new sbyte[] { 101, 120, 105, 115, 116, 32, 32, 32 };
+
         public abstract bool Read(string pathString, out Root result);
         public abstract void Write(String path, Root data);
     }
@@ -190,6 +192,33 @@ namespace SD3IO
                 }
             }
             return true;
+        }
+
+        public async Task ReadAsync(String pathString)
+        {
+            if (!File.Exists(pathString))
+            {
+
+            }
+
+            var saveDataByteArray = await File.ReadAllBytesAsync(pathString);
+            if (saveDataByteArray.Length != 8192)
+            {
+            }
+
+            GCHandle? handle = null;
+            try
+            {
+                handle = GCHandle.Alloc(saveDataByteArray.ToArray(), GCHandleType.Pinned);
+                var result = Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
+            }
+            finally
+            {
+                if (handle?.IsAllocated ?? false)
+                {
+                    handle?.Free();
+                }
+            }
         }
 
         public void Write(String path, Root data)
