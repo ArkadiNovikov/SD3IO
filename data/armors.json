@@ -1,0 +1,1540 @@
+{
+  "armors": [
+    {
+      "id": 0,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 1,
+      "name": "革のバイザー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 2,
+      "name": "ヘッドギア",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 3,
+      "name": "スタデットヘルム",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 4,
+      "name": "バイザードヘルム",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 5,
+      "name": "ホーンドヘルム",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 6,
+      "name": "銀のサレット",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 7,
+      "name": "ベリルアーメット",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 8,
+      "name": "ドラゴンヘルム",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 9,
+      "name": "英雄の王冠",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 10,
+      "name": "守護のかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 11,
+      "name": "昇月のかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 12,
+      "name": "スカルヘッド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 13,
+      "name": "バンダナ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 14,
+      "name": "ウォーリアバンド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 15,
+      "name": "ねじりハチマキ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 16,
+      "name": "チャクラバンド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 17,
+      "name": "人狼のたてがみ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 18,
+      "name": "魔獣の仮面",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 19,
+      "name": "幻獣の仮面",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 20,
+      "name": "竜のたてがみ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 21,
+      "name": "象牙のバンド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 22,
+      "name": "黒耀のバンド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 23,
+      "name": "青玉のバンド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 24,
+      "name": "紅玉のバンド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 25,
+      "name": "革の帽子",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 26,
+      "name": "ガッラビーヤ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 27,
+      "name": "羽根帽子",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 28,
+      "name": "妖精の帽子",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 29,
+      "name": "グリズリーガレア",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 30,
+      "name": "黒ずきん",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 31,
+      "name": "ノクトゴーグル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 32,
+      "name": "フールスクラウン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 33,
+      "name": "風精の帽子",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 34,
+      "name": "銀狼のガレア",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 35,
+      "name": "忍音のずきん",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 36,
+      "name": "ブラディマスク",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 37,
+      "name": "サークレット",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 38,
+      "name": "ウィッチフード",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 39,
+      "name": "緑石のティアラ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 40,
+      "name": "黒ひょうのフード",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 41,
+      "name": "銀のサークレット",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 42,
+      "name": "白雪のヴェール",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 43,
+      "name": "かすみのヴェール",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 44,
+      "name": "月石のティアラ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 45,
+      "name": "ミエインクラウン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 46,
+      "name": "エレモスクラウン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 47,
+      "name": "ルーンヴェール",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 48,
+      "name": "古のティアラ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 49,
+      "name": "ねこみみフード",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 50,
+      "name": "ラビの帽子",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 51,
+      "name": "モグかぶり",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 52,
+      "name": "シルクのリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 53,
+      "name": "ポロビンフード",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 54,
+      "name": "聖霊のずきん",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 55,
+      "name": "太陽石の帽子",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 56,
+      "name": "スピリタスリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 57,
+      "name": "司教のリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 58,
+      "name": "賢者のリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 59,
+      "name": "アンデッドリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 60,
+      "name": "ビティウムリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 61,
+      "name": "羽根つきリボン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 62,
+      "name": "革かぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 63,
+      "name": "バービュート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 64,
+      "name": "バイキングヘルム",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 65,
+      "name": "ホーンクレスト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 66,
+      "name": "ユニコーンヘルム",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 67,
+      "name": "極光のかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 68,
+      "name": "羽根馬のかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 69,
+      "name": "ウァニルのかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 70,
+      "name": "星くずのかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 71,
+      "name": "昇竜のかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 72,
+      "name": "狼のかぶと",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 73,
+      "name": "革のこて",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 74,
+      "name": "はがねのこて",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 75,
+      "name": "ガントレット",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 76,
+      "name": "力のうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 77,
+      "name": "騎士のもんしょう",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 78,
+      "name": "剣士のうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 79,
+      "name": "ドラゴンリング",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 80,
+      "name": "戦王のもんしょう",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 81,
+      "name": "剣王のもんしょう",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 82,
+      "name": "革のくびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 83,
+      "name": "獣人のくびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 84,
+      "name": "パワーリスト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 85,
+      "name": "赤月のつのぶえ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 86,
+      "name": "カーディナルアイ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 87,
+      "name": "狂獣の牙",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 88,
+      "name": "竜のほね飾り",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 89,
+      "name": "闘聖のうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 90,
+      "name": "戦魔のくびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 91,
+      "name": "うつせみのピアス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 92,
+      "name": "盗賊のうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 93,
+      "name": "毒蛇のピアス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 94,
+      "name": "古のタリスマン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 95,
+      "name": "木霊のリング",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 96,
+      "name": "きりがくれのふだ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 97,
+      "name": "ウィッシュボーン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 98,
+      "name": "強運のカード",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 99,
+      "name": "忍の守りふだ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 100,
+      "name": "ジュエルリング",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 101,
+      "name": "水晶のゆびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 102,
+      "name": "きりのペンダント",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 103,
+      "name": "まもりのゆびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 104,
+      "name": "スノークリスタル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 105,
+      "name": "ファイアブレイズ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 106,
+      "name": "賢者の石",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 107,
+      "name": "氷風の髪飾り",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 108,
+      "name": "炎石の髪飾り",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 109,
+      "name": "ビーだまリング",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "うさぎのたまご",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "月のゆびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "プロテクトピアス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "白光のゆびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "黒影のゆびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "法のまがたま",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "ムーンフラワー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "ブラックオニキス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "ヴァンブレーズ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "はがねのうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 120,
+      "name": "風神のうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 121,
+      "name": "大地のうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 122,
+      "name": "ギャラルホルン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 123,
+      "name": "ルーンピアス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 124,
+      "name": "やどりぎのうでわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 125,
+      "name": "ドラウプニル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 126,
+      "name": "巨人のゆびわ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 127,
+      "name": "キルテッドレザー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 128,
+      "name": "ハードレザー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 129,
+      "name": "ベザントメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 130,
+      "name": "ラメラーアーマー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 131,
+      "name": "ホウバーク",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 132,
+      "name": "ハーフプレート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 133,
+      "name": "プレートメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 134,
+      "name": "ルニューラメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 135,
+      "name": "リフレックス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 136,
+      "name": "天馬のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 137,
+      "name": "レオニスプレート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 138,
+      "name": "騎士のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 139,
+      "name": "剣士のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 140,
+      "name": "黄金のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 141,
+      "name": "白銀のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 142,
+      "name": "ドラゴンメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 143,
+      "name": "英雄のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 144,
+      "name": "守護のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 145,
+      "name": "達人のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 146,
+      "name": "スケルトンメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 147,
+      "name": "木綿の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 148,
+      "name": "革のちからおび",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 149,
+      "name": "毛皮のベスト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 150,
+      "name": "闘士の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 151,
+      "name": "チェインベスト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 152,
+      "name": "狼のちからおび",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 153,
+      "name": "プロテクター",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 154,
+      "name": "野獣の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 155,
+      "name": "レーシイのベスト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 156,
+      "name": "バトルスーツ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 157,
+      "name": "こはくの道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 158,
+      "name": "赤の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 159,
+      "name": "青の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 160,
+      "name": "幻獣のちからおび",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 161,
+      "name": "魔獣のちからおび",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 162,
+      "name": "うろこの道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 163,
+      "name": "白虎の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 164,
+      "name": "玄武の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 165,
+      "name": "青竜の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 166,
+      "name": "朱雀の道着",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 167,
+      "name": "コトンキルト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 168,
+      "name": "黒のファティーク",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 169,
+      "name": "迷彩のマント",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 170,
+      "name": "盗賊のマント",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 171,
+      "name": "ソフトレザー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 172,
+      "name": "いだてんのマント",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 173,
+      "name": "くさりかたびら",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 174,
+      "name": "月影のクローク",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 175,
+      "name": "エルフの胸あて",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 176,
+      "name": "はやてのマント",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 177,
+      "name": "ほたる石の胸あて",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 178,
+      "name": "うつしみのマント",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 179,
+      "name": "黒しょうぞく",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 180,
+      "name": "野伏のクィラス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 181,
+      "name": "ニンジャガープ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 182,
+      "name": "しじまのかたびら",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 183,
+      "name": "幻影のクィラス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 184,
+      "name": "銀狼の毛皮",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 185,
+      "name": "風魔のかたびら",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 186,
+      "name": "黒のガープ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 187,
+      "name": "木綿のローブ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 188,
+      "name": "絹のローブ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 189,
+      "name": "魔女の黒衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 190,
+      "name": "女王ばちのドレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 191,
+      "name": "こうもりのコート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 192,
+      "name": "タイガービキニ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 193,
+      "name": "バラのレオタード",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 194,
+      "name": "バニードレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 195,
+      "name": "ふくろうのコート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 196,
+      "name": "そよかぜの衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 197,
+      "name": "マナナーンの衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 198,
+      "name": "朝やけのドレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 199,
+      "name": "夕闇のドレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 200,
+      "name": "純白のドレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 201,
+      "name": "暗黒のローブ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 202,
+      "name": "夢魔のコート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 203,
+      "name": "ミエインのドレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 204,
+      "name": "エレモスのコート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 205,
+      "name": "ルーンのコート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 206,
+      "name": "古の祭衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 207,
+      "name": "ちびっこローブ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 208,
+      "name": "ひつじのきぐるみ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 209,
+      "name": "僧侶の法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 210,
+      "name": "ポポイのおさがり",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 211,
+      "name": "セーラードレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 212,
+      "name": "ポトのきぐるみ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 213,
+      "name": "びろうどのケープ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 214,
+      "name": "モーグリスモック",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 215,
+      "name": "パックンスーツ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 216,
+      "name": "ひらめきのローブ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 217,
+      "name": "うつふしの法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 218,
+      "name": "金糸の法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 219,
+      "name": "銀糸の法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 220,
+      "name": "司祭の法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 221,
+      "name": "みこのしょうぞく",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 222,
+      "name": "くりからの法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 223,
+      "name": "司教の法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 224,
+      "name": "賢者の法衣",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 225,
+      "name": "アンデッドスーツ",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 226,
+      "name": "ビティウムドレス",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 227,
+      "name": "パッデドレザー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 228,
+      "name": "キルボアール",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 229,
+      "name": "羽根のベスト",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 230,
+      "name": "スパイクドレザー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 231,
+      "name": "チェインメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 232,
+      "name": "バンデットメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 233,
+      "name": "スケールメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 234,
+      "name": "マーニプレート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 235,
+      "name": "ステーダプレート",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 236,
+      "name": "白ワシの胸あて",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 237,
+      "name": "ヨツダンモラン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 238,
+      "name": "バルキリーメイル",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 239,
+      "name": "ルーンアーマー",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 240,
+      "name": "つばさのよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 241,
+      "name": "牙のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 242,
+      "name": "夢幻のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 243,
+      "name": "女神のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 244,
+      "name": "極星のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 245,
+      "name": "竜騎兵のよろい",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 246,
+      "name": "ウールフヘジン",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 247,
+      "name": "水竜の盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 248,
+      "name": "灼熱の盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 249,
+      "name": "雷神の盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 250,
+      "name": "大地の盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 251,
+      "name": "黄金の盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 252,
+      "name": "ドラゴンシールド",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 253,
+      "name": "聖なる盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 254,
+      "name": "ちかいの盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 255,
+      "name": "こんごうの盾",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    }
+  ]
+}
