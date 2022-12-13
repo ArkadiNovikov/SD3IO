@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SD3IO", "SD3IO.csproj", "{EBED01EF-D4A3-4F7E-AF21-6F9369ECDFC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD3IO.Test", "SD3IO.Test\SD3IO.Test.csproj", "{B4E8AA24-C74C-4F80-B88D-967603E770AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SD3IO.Test", "SD3IO.Test\SD3IO.Test.csproj", "{B4E8AA24-C74C-4F80-B88D-967603E770AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
