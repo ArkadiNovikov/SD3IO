@@ -1,9 +1,51 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <NullableContextOptions>enable</NullableContextOptions>
     <LangVersion>preview</LangVersion>
+    <EnablePreviewFeatures>true</EnablePreviewFeatures>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SD3IO.Test\**" />
+    <EmbeddedResource Remove="SD3IO.Test\**" />
+    <None Remove="SD3IO.Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="data\armors.json" />
+    <None Remove="data\characters.json" />
+    <None Remove="data\items.json" />
+    <None Remove="data\skills.json" />
+    <None Remove="data\weapons.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="data\armors.json" Type="Non-Resx" WithCulture="false" />
+    <EmbeddedResource Include="data\characters.json" Type="Non-Resx" WithCulture="false" />
+    <EmbeddedResource Include="data\items.json" Type="Non-Resx" WithCulture="false" />
+    <EmbeddedResource Include="data\skills.json" Type="Non-Resx" WithCulture="false" />
+    <EmbeddedResource Include="data\weapons.json" Type="Non-Resx" WithCulture="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Utf8Json" Version="1.3.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
 
 </Project>

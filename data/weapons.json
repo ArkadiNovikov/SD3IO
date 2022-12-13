@@ -1,0 +1,1541 @@
+{
+  "weapons": [
+    {
+      "id": 0,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 1,
+      "name": "ブロンズソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 2,
+      "name": "アイアンソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 3,
+      "name": "グラディウス",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 4,
+      "name": "ブロードソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 5,
+      "name": "サーベル",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 6,
+      "name": "スティールソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 7,
+      "name": "バスタードソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 8,
+      "name": "シルバーブレード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 9,
+      "name": "エストック",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 10,
+      "name": "フォールション",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 11,
+      "name": "フランベルジェ",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 12,
+      "name": "コリシュマルド",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 13,
+      "name": "シャムシール",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 14,
+      "name": "ベイルストーム",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 15,
+      "name": "ミスリルソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 16,
+      "name": "カッツバルゲル",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 17,
+      "name": "バルムンク",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 18,
+      "name": "ヴァーラルソード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 19,
+      "name": "クサナギブレード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 20,
+      "name": "テュルヴィング",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 21,
+      "name": "ディフェンダー",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 22,
+      "name": "ムラマサブレード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 23,
+      "name": "クラウ・ソラス",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 24,
+      "name": "エクスカリバー",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 25,
+      "name": "レーヴァテイン",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 26,
+      "name": "ドラゴンベイン",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 27,
+      "name": "ブレイブブレード",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 28,
+      "name": "ジグムンド",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 29,
+      "name": "ラグナロク",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 30,
+      "name": "デスブリンガー",
+      "capablyCharacter": 1,
+      "capablyClass": 0
+    },
+    {
+      "id": 31,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 32,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 33,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 34,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 35,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 36,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 37,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 38,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 39,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 40,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 41,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 42,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 43,
+      "name": "レザーグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 44,
+      "name": "アイアンナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 45,
+      "name": "ニードルグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 46,
+      "name": "モールベアのツメ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 47,
+      "name": "チェイングローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 48,
+      "name": "バグナグ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 49,
+      "name": "フィーンズクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 50,
+      "name": "シルバーソーン",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 51,
+      "name": "モーグリのツメ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 52,
+      "name": "キーンナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 53,
+      "name": "パワーグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 54,
+      "name": "カイザーナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 55,
+      "name": "アシッドクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 56,
+      "name": "サイクロンクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 57,
+      "name": "ミスリルナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 58,
+      "name": "ボーンナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 59,
+      "name": "ケルベロスクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 60,
+      "name": "ダイヤナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 61,
+      "name": "ゴーストハンター",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 62,
+      "name": "ロッククロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 63,
+      "name": "グロームグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 64,
+      "name": "ジャグパンチャー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 65,
+      "name": "バンパイアクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 66,
+      "name": "オーラグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 67,
+      "name": "ロトンナックル",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 68,
+      "name": "ドラゴンクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 69,
+      "name": "スパイラルクロー",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 70,
+      "name": "ホーリーグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 71,
+      "name": "スカルディセクト",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 72,
+      "name": "ギガースグローブ",
+      "capablyCharacter": 3,
+      "capablyClass": 0
+    },
+    {
+      "id": 73,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 74,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 75,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 76,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 77,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 78,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 79,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 80,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 81,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 82,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 83,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 84,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 85,
+      "name": "フリントナイフ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 86,
+      "name": "ダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 87,
+      "name": "バゼラード",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 88,
+      "name": "ロンデルダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 89,
+      "name": "シャークティース",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 90,
+      "name": "スティールダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 91,
+      "name": "ミゼリコード",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 92,
+      "name": "カタール",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 93,
+      "name": "マインゴーシュ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 94,
+      "name": "かるら",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 95,
+      "name": "水晶のダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 96,
+      "name": "エルフの短剣",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 97,
+      "name": "あしゅら",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 98,
+      "name": "ブルーゲイツ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 99,
+      "name": "ミスリルナイフ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 100,
+      "name": "やしゃ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 101,
+      "name": "ダンシングダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 102,
+      "name": "フィールドダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 103,
+      "name": "びしゃもん",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 104,
+      "name": "メルキールダガー",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 105,
+      "name": "シルヴァンナイフ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 106,
+      "name": "たいしゃく",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 107,
+      "name": "シェオルの短剣",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 108,
+      "name": "クレセントナイフ",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 109,
+      "name": "ふどうみょうおう",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "クリムゾングレア",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "オリハルコン",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "マンスローター",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "こんごうらかん",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "デスストローク",
+      "capablyCharacter": 5,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 120,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 121,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 122,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 123,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 124,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 125,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 126,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 127,
+      "name": "木の杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 128,
+      "name": "スタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 129,
+      "name": "スイッチスタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 130,
+      "name": "かしの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 131,
+      "name": "ピューターロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 132,
+      "name": "ルビーの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 133,
+      "name": "クリスタルロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 134,
+      "name": "ソウルロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 135,
+      "name": "バーシュスタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 136,
+      "name": "カニングスタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 137,
+      "name": "とねりこの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 138,
+      "name": "ウィルスタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 139,
+      "name": "トートの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 140,
+      "name": "ラージンの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 141,
+      "name": "ミスリルロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 142,
+      "name": "スカルロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 143,
+      "name": "ミーミルロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 144,
+      "name": "ドルイドの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 145,
+      "name": "あやかしの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 146,
+      "name": "ネビュラスタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 147,
+      "name": "世界樹の枝",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 148,
+      "name": "いにしえのロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 149,
+      "name": "ミズナラの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 150,
+      "name": "エターナルロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 151,
+      "name": "ケルヌンロスの杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 152,
+      "name": "ケーリュイケオン",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 153,
+      "name": "ガンバンテイン",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 154,
+      "name": "精霊の杖",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 155,
+      "name": "ルーンスタッフ",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 156,
+      "name": "ドラゴンロッド",
+      "capablyCharacter": 2,
+      "capablyClass": 0
+    },
+    {
+      "id": 157,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 158,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 159,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 160,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 161,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 162,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 163,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 164,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 165,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 166,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 167,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 168,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 169,
+      "name": "からざお",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 170,
+      "name": "ウッドフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 171,
+      "name": "ボールチェイン",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 172,
+      "name": "ライトフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 173,
+      "name": "ウォーハンマー",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 174,
+      "name": "スティールモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 175,
+      "name": "ダックの鉄球",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 176,
+      "name": "シルバーフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 177,
+      "name": "ヘヴィフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 178,
+      "name": "ハンマーフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 179,
+      "name": "モーニングスター",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 180,
+      "name": "ヒエロフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 181,
+      "name": "パペットフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 182,
+      "name": "ブロックバスター",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 183,
+      "name": "ミスリルモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 184,
+      "name": "トロウルモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 185,
+      "name": "キュニアモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 186,
+      "name": "ホーリーフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 187,
+      "name": "シュビラフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 188,
+      "name": "グラビティモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 189,
+      "name": "アルティマモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 190,
+      "name": "ブラッドモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 191,
+      "name": "メテオフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 192,
+      "name": "ミョルニル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 193,
+      "name": "サタンフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 194,
+      "name": "ベルティナモール",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 195,
+      "name": "ジャッジメンテス",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 196,
+      "name": "ギガースフレイル",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 197,
+      "name": "死者のつちほこ",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 198,
+      "name": "ジャガーノート",
+      "capablyCharacter": 4,
+      "capablyClass": 0
+    },
+    {
+      "id": 199,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "ブロンズランス",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "ロングスピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "フラメア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "コルセルカ",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "パルティザン",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "スティールランス",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "グレイヴ",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "シルバーランス",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "ウィングスピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "妖魔のやり",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "プルームランス",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "ダークピアサー",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "トレントスピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "ゴールデンスピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "ミスリルスピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "ブレインレッカ",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "グリフィンランス",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "スタッグホーン",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "ウルヴスファング",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "メイデンリーフ",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "バルキリースピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "ミディールのやり",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "ブリューナク",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "グングニル",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "ペイントゥース",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "ブレイズピアサー",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "トゥルースピア",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "スターゲイザー",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "ドラゴンランス",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "巨人のやり",
+      "capablyCharacter": 6,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 116,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 117,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 118,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 119,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 110,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 111,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 112,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 113,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 114,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    },
+    {
+      "id": 115,
+      "name": "なし",
+      "capablyCharacter": 0,
+      "capablyClass": 0
+    }
+
+  ]
+}

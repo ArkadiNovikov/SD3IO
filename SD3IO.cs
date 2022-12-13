@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
@@ -25,13 +27,14 @@ namespace SD3IO
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
     public struct CharacterHeader
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)] public sbyte[] name;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] public ushort[] name;
         public sbyte level;
         public short currentHP;
         public short maxHP;
         public short currentMP;
         public short maxMP;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 7)] public byte[] unknown;
+
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
@@ -85,16 +88,16 @@ namespace SD3IO
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
     public struct SaveData
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 258)] public byte[] unknown1;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 258)] private byte[] unknown1;
         public CharacterStatus character1;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 112)] public byte[] unknown2;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 112)] private byte[] unknown2;
         public CharacterStatus character2;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 112)] public byte[] unknown3;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 112)] private byte[] unknown3;
         public CharacterStatus character3;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 110)] public byte[] unknown4;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)] public sbyte[] characterName1;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)] public sbyte[] characterName2;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)] public sbyte[] characterName3;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 110)] private byte[] unknown4;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] public ushort[] characterName1;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] public ushort[] characterName2;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] public ushort[] characterName3;
         public ushort currency;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 529)] public byte[] unknown5;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 103)] public sbyte[] storage;
@@ -156,62 +159,40 @@ namespace SD3IO
 
     public interface IIO
     {
-        public static readonly sbyte[] EXISTSTRING = new sbyte[] { 101, 120, 105, 115, 116, 32, 32, 32 };
 
-        public abstract bool Read(string pathString, out Root result);
+        public abstract Root Read(string pathString);
+        public abstract Task<Root> ReadAsync(string pathString);
         public abstract void Write(String path, Root data);
+        public abstract Task WriteAsync(String path, Root data);
     }
 
     public class SD3IO : IIO
     {
-        public bool Read(String pathString, out Root result)
+        public Root Read(String pathString)
         {
-            if (!File.Exists(pathString))
-            {
-                result = new Root();
-                return false;
-            }
-
-            ReadOnlySpan<byte> saveDataByteArray = File.ReadAllBytes(pathString);
-            if (saveDataByteArray.Length != 8192)
-            {
-                result = new Root();
-                return false;
-            }
-
-            GCHandle? handle = null;
-            try
-            {
-                handle = GCHandle.Alloc(saveDataByteArray.ToArray(), GCHandleType.Pinned);
-                result = Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
-            }
-            finally
-            {
-                if (handle?.IsAllocated ?? false)
-                {
-                    handle?.Free();
-                }
-            }
-            return true;
+            var task = ReadAsync(pathString);
+            task.Wait();
+            return task.Result;
         }
 
-        public async Task ReadAsync(String pathString)
+        public async Task<Root> ReadAsync(String pathString)
         {
             if (!File.Exists(pathString))
             {
-
+                return new Root();
             }
 
             var saveDataByteArray = await File.ReadAllBytesAsync(pathString);
             if (saveDataByteArray.Length != 8192)
             {
+                return new Root();
             }
 
             GCHandle? handle = null;
             try
             {
                 handle = GCHandle.Alloc(saveDataByteArray.ToArray(), GCHandleType.Pinned);
-                var result = Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
+                return Marshal.PtrToStructure<Root>(handle.Value.AddrOfPinnedObject());
             }
             finally
             {
@@ -224,7 +205,21 @@ namespace SD3IO
 
         public void Write(String path, Root data)
         {
+            var task = WriteAsync(path, data);
+            task.Wait();
+            if (task.IsFaulted)
+            {
+                throw task.Exception;
+            }
+        }
+        public async Task WriteAsync(String path, Root data)
+        {
             byte[] saveDataByteArray = new byte[Marshal.SizeOf(data)];
+            if (saveDataByteArray.Length != 8192)
+            {
+                return;
+            }
+
             GCHandle? handle = null;
             try
             {
@@ -239,7 +234,151 @@ namespace SD3IO
                 }
             }
 
-            File.WriteAllBytes(path, saveDataByteArray);
+            await File.WriteAllBytesAsync(path, saveDataByteArray);
+        }
+
+        public string NameByteArrayToString(ushort[] name)
+        {
+            var nameStr = "";
+            foreach (var item in name)
+            {
+                if (Data.nameStringTable.Length >= item)
+                {
+                    nameStr += Data.nameStringTable[item];
+                }
+                else
+                {
+                    nameStr += Data.nameStringTable[Data.nameStringTable.Length - 1];
+                }
+            }
+
+            return nameStr;
+        }
+
+        public ushort[] NameStringToByteArray([DisallowNull] string nameStr)
+        {
+            return null;
+        }
+    }
+
+    public static class Data
+    {
+        public static readonly sbyte[] EXISTSTRING = new sbyte[] { 101, 120, 105, 115, 116, 32, 32, 32 };
+
+        public static readonly char[] nameStringTable = {
+            '　', 'ー', '？', 'あ', 'い', 'う', 'え', 'お', 'か', 'き',
+            'く', 'け', 'こ', 'さ', 'し', 'す', 'せ', 'そ', 'た', 'ち',
+            'つ', 'て', 'と', 'な', 'に', 'ぬ', 'ね', 'の', 'は', 'ひ',
+            'ふ', 'へ', 'ほ', 'ま', 'み', 'む', 'め', 'も', 'や', 'ゆ',
+            'よ', 'ら', 'り', 'る', 'れ', 'ろ', 'わ', 'を', 'ん', 'っ',
+            'ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ッ', 'ャ',
+            'ュ', 'ョ', 'ァ', 'ィ', 'ゥ', 'ェ', 'ォ', 'ア', 'イ', 'ウ',
+            'エ', 'オ', 'カ', 'キ', 'ク', 'ケ', 'コ', 'サ', 'シ', 'ス',
+            'セ', 'ソ', 'タ', 'チ', 'ツ', 'テ', 'ト', 'ナ', 'ニ', 'ヌ',
+            'ネ', 'ノ', 'ハ', 'ヒ', 'フ', 'ヘ', 'ホ', 'マ', 'ミ', 'ム',
+            'メ', 'モ', 'ヤ', 'ユ', 'ヨ', 'ラ', 'リ', 'ル', 'レ', 'ロ',
+            'ワ', 'ヲ', 'ン', 'が', 'ぎ', 'ぐ', 'げ', 'ご', 'ざ', 'じ',
+            'ず', 'ぜ', 'ぞ', 'だ', 'ぢ', 'づ', 'で', 'ど', 'ば', 'び',
+            'ぶ', 'べ', 'ぼ', 'ガ', 'ギ', 'グ', 'ゲ', 'ゴ', 'ザ', 'ジ',
+            'ズ', 'ゼ', 'ゾ', 'ダ', 'ヂ', 'ヅ', 'デ', 'ド', 'バ', 'ビ',
+            'ブ', 'ベ', 'ボ', 'ヴ', 'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ', 'パ',
+            'ピ', 'プ', 'ペ', 'ポ', '～', '…', '・', '！', '？'
+        };
+
+        public static readonly string[] seven = { "マナの祝日", "ルナの日", "サラマンダーの日", "ウンディーネの日", "ドリアードの日", "ジンの日", "ノームの日" };
+
+        public static void GetData<T>(ref T value) where T : JSON.JsonObject
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+
+            var path = assembly.GetName().Name;
+            switch (value)
+            {
+                case JSON.Items:
+                    path += ".data.items.json";
+                    break;
+                case JSON.Skills:
+                    path += ".data.skills.json";
+                    break;
+                case JSON.Characters:
+                    path += ".data.characters.json";
+                    break;
+                case JSON.Weapons:
+                    path += ".data.weapons.json";
+                    break;
+                case JSON.Armors:
+                    path += ".data.armors.json";
+                    break;
+            }
+
+            var stream = assembly.GetManifestResourceStream(path);
+            value = Utf8Json.JsonSerializer.Deserialize<T>(stream);
+        }
+    }
+
+    namespace JSON
+    {
+        public interface JsonObject { }
+
+
+        public class Items : JsonObject
+        {
+            public Item[] items { get; set; }
+        }
+
+        public class Item
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+        }
+
+        public class Skills : JsonObject
+        {
+            public Skill[] skills { get; set; }
+        }
+
+        public class Skill
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+        }
+
+
+        public class Characters : JsonObject
+        {
+            public Character[] characters { get; set; }
+        }
+
+        public class Character
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+        }
+
+        public class Weapons : JsonObject
+        {
+            public Weapon[] weapons { get; set; }
+        }
+
+        public class Weapon
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public int capablyCharacter { get; set; }
+            public int capablyClass { get; set; }
+        }
+
+        public class Armors : JsonObject
+        {
+            public Armor[] armors { get; set; }
+        }
+
+        public class Armor
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public int capablyCharacter { get; set; }
+            public int capablyClass { get; set; }
         }
     }
 }
