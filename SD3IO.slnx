@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SD3IO.csproj" />
+  <Project Path="SD3IO.Test/SD3IO.Test.csproj" />
+</Solution>
